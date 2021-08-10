@@ -45,6 +45,9 @@ object DebuggableTestDetails extends App {
         Debuggable(result, s"h: input: $a, result: $result")
     }
 
+    //I couldn't understand this. How can the 'for' extract an integer (e.g. fRes) from the State Monad?
+    //by means of 'map'? Sorry to bother with these dummy questions but I have experienced only fors which
+    //have worked with Lists :)
     val finalResult = for {
         fRes <- f(100)
         gRes <- g(fRes)
